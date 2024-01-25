@@ -12,7 +12,7 @@ body = {
     "photo": "https://dolnikov.ru/pokemons/albums/001.png"
  }
 
- response =requests.post(url=f'{URL}/pokemons', json=body, headers=HEADER)
+response =requests.post(url=f'{URL}/pokemons', json=body, headers=HEADER)
  print(f'Статус код: {response.status_code}. Сообщение: {response.text}')
 
 
@@ -44,5 +44,5 @@ body = {
     "pokemon_id": "28273"
 }
 
-response =requests.post(url=f'{URL} /trainers/add_pokeball', json=body, headers=HEADER)
+response =requests.post(url=f'{URL}/trainers/add_pokeball', json=body, headers=HEADER)
 print(f'Статус код: {response.status_code}. Сообщение: {response.text}')
