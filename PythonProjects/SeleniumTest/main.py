@@ -13,7 +13,7 @@ body = {
  }
 
 response =requests.post(url=f'{URL}/pokemons', json=body, headers=HEADER)
- print(f'Статус код: {response.status_code}. Сообщение: {response.text}')
+print(f'Статус код: {response.status_code}. Сообщение: {response.text}')
 
 
 
